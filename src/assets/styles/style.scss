@@ -1,0 +1,66 @@
+@import 'mixins';
+@import 'fonts';
+
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font: rem(16px) $font-family-suisseintl;
+  color: #000000;
+  background: #fff;
+  display: block;
+}
+
+body.popup-is-active {
+  overflow: hidden;
+}
+
+.checkout-page {
+  a {
+    color: #46C3D2;
+    text-decoration: none;
+    transition: all linear 0.2s;
+  }
+
+  a:hover {
+    color: #46C3D2;
+    text-decoration: underline;
+  }
+}
+
+select, input[type='radio'], input[type='checkbox'], input[type='button'], input[type='submit'], label, button {
+  cursor: pointer;
+  font-family: inherit;
+  outline: none;
+}
+
+button {
+  font-family: inherit;
+  transition: all linear 0.2s;
+}
+
+img {
+  max-width: 100%;
+  border: none;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: all 0.5s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+.content {
+  width: 100%;
+  max-width: rem(1120px);
+  margin: 0 auto;
+  font-family: $font-family-suisseintl;
+  font-size: rem(14px);
+}
